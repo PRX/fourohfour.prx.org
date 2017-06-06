@@ -1,0 +1,24 @@
+{
+  "name": "fourohfour.prx.org",
+  "version": "1.0.0",
+  "description": "404s",
+  "keywords": [
+    "PRX",
+    "Fourohfour"
+  ],
+  "homepage": "https://fourohfour.prx.org",
+  "bugs": "https://github.com/PRX/fourohfour.prx.org/issues",
+  "license": "MIT",
+  "author": "PRX, Inc. <help@prx.org> (http://www.prx.org)",
+  "contributors": [
+    "Chris Kalafarski <chris.kalafarski@prx.org>"
+  ],
+  "repository": "https://github.com/PRX/fourohfour.prx.org.git",
+  "scripts": {
+    "serve": "node lib/server.js"
+  },
+  "private": true,
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

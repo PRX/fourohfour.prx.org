@@ -1,0 +1,11 @@
+fourohfour:
+  build: .
+  volumes:
+    - .:/app
+  env_file:
+    - .env
+  ports:
+    - "4040:4040"
+  command: serve
+  environment:
+    VIRTUAL_HOST: fourohfour.prx.docker
