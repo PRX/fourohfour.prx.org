@@ -15,7 +15,7 @@
   ],
   "repository": "https://github.com/PRX/fourohfour.prx.org.git",
   "scripts": {
-    "serve": "node lib/server.js"
+    "start": "node lib/server.js"
   },
   "private": true,
   "dependencies": {

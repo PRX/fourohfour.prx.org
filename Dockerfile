@@ -3,9 +3,8 @@ FROM mhart/alpine-node:6.5
 MAINTAINER PRX <sysadmin@prx.org>
 LABEL org.prx.app="yes"
 
-# Add Tini
 ENV TINI_VERSION v0.9.0
-ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /tini
+ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini-static /tini
 RUN chmod +x /tini
 
 WORKDIR /app
@@ -15,5 +14,5 @@ ADD . ./
 
 RUN npm install
 
-ENTRYPOINT ["/tini", "--"]
-CMD ["./bin/application"]
+ENTRYPOINT ["/tini", "--", "npm", "run-script"]
+CMD ["start"]
