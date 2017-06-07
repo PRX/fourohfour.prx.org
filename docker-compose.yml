@@ -6,6 +6,6 @@ fourohfour:
     - .env
   ports:
     - "4040:4040"
-  command: serve
+  command: ./bin/application
   environment:
     VIRTUAL_HOST: fourohfour.prx.docker
